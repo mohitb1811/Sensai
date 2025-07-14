@@ -30,7 +30,7 @@ const HeroSection = () => {
      <section className="w-full pt-36 md:pt-48 pb-10">
       <div className="space-y-6 text-center">
         <div className="space-y-6 mx-auto">
-          <h1 className="text-3xl font-bold md:text-6xl lg:text-7xl xl:text-8xl gradient-title text-center">
+          <h1 className="text-3xl font-bold md:text-6xl lg:text-7xl xl:text-8xl leading-[1.2] text-transparent bg-clip-text bg-gradient-to-b from-gray-500 via-white to-gray-700 text-center">
   Your AI Career Coach for
   <br />
   <ReactTyped
@@ -48,12 +48,12 @@ const HeroSection = () => {
         </div>
          <div className="flex justify-center space-x-4">
           <Link href="/dashboard">
-            <Button size="lg" className="px-8">
+            <Button size="lg" className="px-8 cursor-pointer">
               Get Started
             </Button>
           </Link>
-          <Link href="https://www.youtube.com/roadsidecoder">
-            <Button size="lg" variant="outline" className="px-8">
+          <Link href="#">
+            <Button size="lg" variant="outline" className="px-8 cursor-pointer">
               Watch Demo
             </Button>
           </Link>

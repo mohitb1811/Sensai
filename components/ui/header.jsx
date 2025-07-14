@@ -31,10 +31,11 @@ const Header = async() => {
         <div className="flex items-center space-x-2 md:space-x-4">
             <SignedIn>
                 <Link href="/dashboard">
-              <Button  variant="outline">
-                <LayoutDashboard className="h-4 w-4" />
-                Industry Insights
-              </Button>
+              <Button variant="outline">
+  <LayoutDashboard className="h-4 w-4" />
+  <span className="hidden md:block ml-2 cursor-pointer">Industry Insights</span>
+</Button>
+
               
             </Link>
             
@@ -42,7 +43,7 @@ const Header = async() => {
             <DropdownMenuTrigger>
                 <Button>
                 < StarsIcon className="h-4 w-4" />
-                <span className="hidden md:block">Growth Tools</span>
+                <span className="hidden md:block cursor-pointer">Growth Tools</span>
                 <ChevronDown className="h-4 w-4" />
               </Button>
   </DropdownMenuTrigger>
@@ -75,7 +76,7 @@ const Header = async() => {
             </SignedIn>
  <SignedOut>
               <SignInButton>
-              <Button variant="outline">Sign In</Button>
+              <Button variant="outline" className='cursor-pointer'>Sign In</Button>
             </SignInButton>
             </SignedOut>
             <SignedIn>
@@ -98,4 +99,4 @@ const Header = async() => {
   )
 }
 
-export default Header
+export default Header;
