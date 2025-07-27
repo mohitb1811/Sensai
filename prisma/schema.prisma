@@ -8,14 +8,14 @@ datasource db {
 }
 
 model User {
-  id              String            @id @default(uuid())
-  clerkUserId     String            @unique
-  email           String            @unique
+  id              String           @id @default(uuid())
+  clerkUserId     String           @unique
+  email           String           @unique
   name            String?
   imageUrl        String?
   industry        String?
-  createdAt       DateTime          @default(now())
-  updatedAt       DateTime          @updatedAt
+  createdAt       DateTime         @default(now())
+  updatedAt       DateTime         @updatedAt
   bio             String?
   experience      Int?
   skills          String[]
